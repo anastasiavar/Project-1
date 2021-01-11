@@ -1,0 +1,58 @@
+/* Base CSS */
+
+html {
+  font: 400 16px/1.15 "Open Sans", Arial, sans-serif;
+  background-color: #424242;
+  color: #ffffff;
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+/* Responsive Guides */
+/* https://www.youtube.com/watch?v=Bop8xYs8LYA&ab_channel=XOPIXEL */
+/* https://www.w3schools.com/css/css_rwd_intro.asp */
+/* https://www.quackit.com/css/flexbox/tutorial/create_a_responsive_flexbox_layout.cfm */
+/* https://bulma.io/ */
+
+.section {
+  padding: 2rem 1.5rem;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+}
+
+.main {
+  z-index: 1;
+}
+
+/* For the Breakpoints i used the Bulma breakpoints https://bulma.io/documentation/layout/container/ */
+
+@media only screen and (max-width: 1023px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1215px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media only screen and (min-width: 1216px) and (max-width: 1407px) {
+  .container {
+    max-width: 1152px;
+  }
+}
+
+@media only screen and (min-width: 1408px) {
+  .container {
+    max-width: 1344px;
+  }
+}

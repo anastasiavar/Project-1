@@ -1,0 +1,43 @@
+.contact-us-main {
+  text-align: center;
+  padding-top: 84px;
+  height: 85vh;
+}
+
+.contact-us-blocks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-us-block {
+  position: relative;
+  display: flex;
+  background-image: url("../images/image-placeholder.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  margin: 32px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: #424242;
+}
+
+/* To center the text in the block i used this guide https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/ */
+
+.contact-us-block-text {
+  margin: auto;
+  padding: 32px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1023px) {
+  .contact-us-blocks {
+    flex-direction: column;
+  }
+}
