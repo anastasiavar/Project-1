@@ -27,10 +27,6 @@
 }
 
 .footer-block-icon {
-  background-image: url("../images/image-placeholder.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 42px;
   width: 42px;
 }
@@ -55,10 +51,6 @@
 }
 
 .footer-social-icon {
-  background-image: url("../images/image-placeholder.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 36px;
   width: 36px;
   margin: 0 8px;

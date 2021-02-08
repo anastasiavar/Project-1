@@ -41,17 +41,93 @@
         <div class="container">
           <h1>Let's talk</h1>
           <div class="contact-us-blocks">
-            <a href="./contact-form.html" class="contact-us-block">
+            <a id="workTogetherBtn" class="contact-us-block">
+              <div class="contact-us-block-overlay"></div>
               <span class="contact-us-block-text"> Let's work together. </span>
             </a>
-            <a href="./contact-form.html" class="contact-us-block">
+            <a id="assistanceBtn" class="contact-us-block">
+              <div class="contact-us-block-overlay"></div>
               <span class="contact-us-block-text">
                 Our assistance at your service
               </span>
             </a>
-            <a href="./contact-form.html" class="contact-us-block">
+            <a id="joinBtn" class="contact-us-block">
+              <div class="contact-us-block-overlay"></div>
               <span class="contact-us-block-text">Join our team</span>
             </a>
+          </div>
+        </div>
+      </section>
+      <section id="form-section" class="section hidden-section">
+        <div class="container">
+          <div class="contact-form-container">
+            <div class="contact-form-image">
+              <img id="form-image" src="" alt="" />
+            </div>
+            <form id="form" autocomplete="off" class="contact-form">
+              <div
+                id="first-name-input-wrapper"
+                class="contact-form-input-wrapper"
+              >
+                <input
+                  id="first-name-input"
+                  type="text"
+                  placeholder="First Name"
+                  class="contact-form-input"
+                />
+                <div class="contact-form-input-error">
+                  First Name is required
+                </div>
+              </div>
+              <div
+                id="last-name-input-wrapper"
+                class="contact-form-input-wrapper"
+              >
+                <input
+                  id="last-name-input"
+                  type="text"
+                  placeholder="Last Name"
+                  class="contact-form-input"
+                />
+                <div class="contact-form-input-error">
+                  Last Name is required
+                </div>
+              </div>
+
+              <div id="email-input-wrapper" class="contact-form-input-wrapper">
+                <input
+                  id="email-input"
+                  type="text"
+                  placeholder="Your e-mail address"
+                  class="contact-form-input"
+                />
+                <div class="contact-form-input-error">
+                  Please enter a valid email address
+                </div>
+              </div>
+
+              <div
+                id="message-input-wrapper"
+                class="contact-form-input-wrapper"
+              >
+                <textarea
+                  name=""
+                  id="message-textarea"
+                  cols="30"
+                  rows="10"
+                  placeholder="Your questions..."
+                  class="contact-form-textarea"
+                ></textarea>
+                <div class="contact-form-input-error">
+                  Your question is required
+                </div>
+              </div>
+
+              <input id="form-type" name="form-type" type="hidden" />
+              <button id="form-button" class="contact-form-button" disabled>
+                SEND MESSAGE
+              </button>
+            </form>
           </div>
         </div>
       </section>
@@ -60,28 +136,40 @@
       <div class="container footer-container">
         <div class="footer-blocks">
           <div class="footer-block">
-            <div class="footer-block-icon"></div>
+            <div class="footer-block-icon">
+              <img src="./images/footer/location-icon.png" alt="" />
+            </div>
             <span class="footer-block-text">Korai 2, Moschato, Athens</span>
           </div>
           <div class="footer-block">
-            <div class="footer-block-icon"></div>
+            <div class="footer-block-icon">
+              <img src="./images/footer/email-icon.png" alt="" />
+            </div>
             <span class="footer-block-text">companyname@gmail.com</span>
           </div>
           <div class="footer-block">
-            <div class="footer-block-icon"></div>
+            <div class="footer-block-icon">
+              <img src="./images/footer/phone-icon.png" alt="" />
+            </div>
             <span class="footer-block-text">(210) - 64826923</span>
           </div>
         </div>
         <div class="footer-social">
           <div class="footer-social-icons">
-            <a href="google.com" target="_blank" class="footer-social-icon"></a>
-            <a href="google.com" target="_blank" class="footer-social-icon"></a>
-            <a href="google.com" target="_blank" class="footer-social-icon"></a>
-            <a href="google.com" target="_blank" class="footer-social-icon"></a>
+            <a href="facebook.com" target="_blank" class="footer-social-icon">
+              <img src="./images/footer/fb-icon.png" alt="" />
+            </a>
+            <a href="instagram.com" target="_blank" class="footer-social-icon">
+              <img src="./images/footer/ig-icon.png" alt="" />
+            </a>
+            <a href="twitter.com" target="_blank" class="footer-social-icon">
+              <img src="./images/footer/tw-icon.png" alt="" />
+            </a>
           </div>
           <span class="footer-social-text">OUR SOCIAL MEDIA</span>
         </div>
       </div>
     </footer>
+    <script src="./js/contact-us-page.js"></script>
   </body>
 </html>

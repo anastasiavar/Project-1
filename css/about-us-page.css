@@ -12,13 +12,16 @@
 }
 
 .about-us-image {
-  background-image: url("../images/image-placeholder.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 600px;
   flex-basis: 40%;
   margin-left: auto;
+}
+
+.about-us-image img {
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
 }
 
 .our-team-section-header {
@@ -33,20 +36,23 @@
 }
 
 .our-team-section-block {
-  background-image: url("../images/image-placeholder.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 120px;
   width: 120px;
   margin-right: 32px;
   margin-bottom: 32px;
 }
 
+.our-team-section-block img {
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
 .our-office-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 25vh);
   grid-gap: 1rem;
   min-height: 1000px;
 }
@@ -112,9 +118,15 @@
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1215px) {
+  .our-office-grid {
+    grid-template-rows: repeat(6, 17vh);
+  }
 }
 
 @media only screen and (min-width: 1216px) and (max-width: 1407px) {
+  .our-office-grid {
+    grid-template-rows: repeat(6, 21vh);
+  }
 }
 
 @media only screen and (min-width: 1408px) {

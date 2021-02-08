@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/home-page.css" />
+    <!-- Swiper Library CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/home-swiper.css" />
   </head>
   <body>
     <header class="header">
@@ -52,41 +59,55 @@
       </div>
     </header>
     <main class="main">
-      <section>
-        <div class="hero-image"></div>
+      <section class="swiper-section">
+        <div id="home-swiper" class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/home/hero-image.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/home/hero-image-2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/home/hero-image-3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/home/hero-image-4.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
       </section>
       <section class="section home-page-welcome-section">
         <div class="container">
-          <h1>Welcome to Company Name</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum
-            suspendisse ultrices gravida dictum fusce ut placerat orci nulla
-          </p>
+          <h1>Welcome to VAR</h1>
+          <p>We are the design ingredient missing from your digital product</p>
         </div>
       </section>
       <section class="section">
         <div class="container home-page-grid">
           <div class="home-page-grid-tile">
-            <img src="./images/image-placeholder.png" />
+            <img src="./images/home/home-mosaic-1.jpg" />
           </div>
           <div class="home-page-grid-tile">
-            <img src="./images/image-placeholder.png" />
+            <img src="./images/home/home-mosaic-2.jpg" />
           </div>
           <div class="home-page-grid-tile">
-            <img src="./images/image-placeholder.png" />
+            <img src="./images/home/home-mosaic-3.jpg" />
           </div>
           <div class="home-page-grid-tile">
-            <img src="./images/image-placeholder.png" />
+            <img src="./images/home/home-mosaic-4.jpg" />
           </div>
           <div class="home-page-grid-tile">
-            <img src="./images/image-placeholder.png" />
+            <img src="./images/home/home-mosaic-5.jpg" />
           </div>
           <div class="home-page-grid-tile">
-            <img src="./images/image-placeholder.png" />
+            <img src="./images/home/home-mosaic-6.jpg" />
           </div>
           <div class="home-page-grid-tile">
-            <img src="./images/image-placeholder.png" />
+            <img src="./images/home/home-mosaic-7.jpg" />
           </div>
         </div>
         <div class="home-page-grid-view-more">
@@ -100,28 +121,43 @@
       <div class="container footer-container">
         <div class="footer-blocks">
           <div class="footer-block">
-            <div class="footer-block-icon"></div>
+            <div class="footer-block-icon">
+              <img src="./images/footer/location-icon.png" alt="" />
+            </div>
             <span class="footer-block-text">Korai 2, Moschato, Athens</span>
           </div>
           <div class="footer-block">
-            <div class="footer-block-icon"></div>
+            <div class="footer-block-icon">
+              <img src="./images/footer/email-icon.png" alt="" />
+            </div>
             <span class="footer-block-text">companyname@gmail.com</span>
           </div>
           <div class="footer-block">
-            <div class="footer-block-icon"></div>
+            <div class="footer-block-icon">
+              <img src="./images/footer/phone-icon.png" alt="" />
+            </div>
             <span class="footer-block-text">(210) - 64826923</span>
           </div>
         </div>
         <div class="footer-social">
           <div class="footer-social-icons">
-            <a href="google.com" target="_blank" class="footer-social-icon"></a>
-            <a href="google.com" target="_blank" class="footer-social-icon"></a>
-            <a href="google.com" target="_blank" class="footer-social-icon"></a>
-            <a href="google.com" target="_blank" class="footer-social-icon"></a>
+            <a href="facebook.com" target="_blank" class="footer-social-icon">
+              <img src="./images/footer/fb-icon.png" alt="" />
+            </a>
+            <a href="instagram.com" target="_blank" class="footer-social-icon">
+              <img src="./images/footer/ig-icon.png" alt="" />
+            </a>
+            <a href="twitter.com" target="_blank" class="footer-social-icon">
+              <img src="./images/footer/tw-icon.png" alt="" />
+            </a>
           </div>
           <span class="footer-social-text">OUR SOCIAL MEDIA</span>
         </div>
       </div>
     </footer>
+    <!-- Swiper Library JavaScript -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/home-swiper.js"></script>
   </body>
 </html>

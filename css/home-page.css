@@ -1,12 +1,3 @@
-.hero-image {
-  background-image: url("../images/image-placeholder.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
-  width: 100%;
-}
-
 .home-page-welcome-section {
   text-align: center;
 }
@@ -18,7 +9,7 @@
 .home-page-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 16vh);
   grid-gap: 1rem;
   min-height: 1216px;
 }
@@ -93,4 +84,19 @@
     margin-bottom: 1rem;
     height: 360px;
   }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1215px) {
+  .home-page-grid {
+    grid-template-rows: repeat(6, 10vh);
+  }
+}
+
+@media only screen and (min-width: 1216px) and (max-width: 1407px) {
+  .home-page-grid {
+    grid-template-rows: repeat(6, 14vh);
+  }
+}
+
+@media only screen and (min-width: 1408px) {
 }
