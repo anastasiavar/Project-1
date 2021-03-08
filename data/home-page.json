@@ -1,0 +1,17 @@
+{
+    "sliderImages": [
+        "./images/home/hero-image.jpg",
+        "./images/home/hero-image-2.jpg",
+        "./images/home/hero-image-3.jpg",
+        "./images/home/hero-image-4.jpg"
+    ],
+    "mosaicImages": [
+        "./images/home/home-mosaic-1.jpg",
+        "./images/home/home-mosaic-2.jpg",
+        "./images/home/home-mosaic-3.jpg",
+        "./images/home/home-mosaic-4.jpg",
+        "./images/home/home-mosaic-5.jpg",
+        "./images/home/home-mosaic-6.jpg",
+        "./images/home/home-mosaic-7.jpg"
+    ]
+}

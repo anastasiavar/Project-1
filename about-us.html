@@ -2,7 +2,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
+    <title>About Us | VAR</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./images/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./images/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./images/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./images/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./images/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./images/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./images/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./images/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./images/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./images/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#424242" />
+    <meta
+      name="msapplication-TileImage"
+      content="./images/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#424242" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
@@ -12,27 +88,58 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/about-us-page.css" />
+    <link rel="stylesheet" href="./css/member.css" />
+    <link rel="stylesheet" href="./css/burger-menu.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
         <a href="./index.html" class="header-logo"></a>
+
+        <div class="header-nav-mobile-button" id="toggle">
+          <span class="top"></span><span class="middle"></span
+          ><span class="bottom"></span>
+        </div>
+        <div class="overlay" id="overlay">
+          <nav class="overlay-menu">
+            <ul>
+              <li>
+                <a href="./index.html">Home Page</a>
+              </li>
+              <li>
+                <a href="./projects.html">Projects</a>
+              </li>
+              <li>
+                <a href="./about-us.html">About Us</a>
+              </li>
+              <li>
+                <a href="./services.html">Services</a>
+              </li>
+              <li>
+                <a href="./contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
         <nav class="header-nav">
-          <span class="header-nav-item">
-            <a href="./index.html" class="header-nav-link">Home Page</a>
-          </span>
-          <span class="header-nav-item">
-            <a href="./projects.html" class="header-nav-link">Projects</a>
-          </span>
-          <span class="header-nav-item active">
-            <a href="./about-us.html" class="header-nav-link">About Us</a>
-          </span>
-          <span class="header-nav-item">
-            <a href="./services.html" class="header-nav-link">Services</a>
-          </span>
-          <span class="header-nav-item">
-            <a href="./contact-us.html" class="header-nav-link">Contact Us</a>
-          </span>
+          <ul class="header-nav-ul">
+            <li class="header-nav-item">
+              <a href="./index.html" class="header-nav-link">Home Page</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./projects.html" class="header-nav-link">Projects</a>
+            </li>
+            <li class="header-nav-item active">
+              <a href="./about-us.html" class="header-nav-link">About Us</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./services.html" class="header-nav-link">Services</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./contact-us.html" class="header-nav-link">Contact Us</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -42,127 +149,28 @@
           <div class="about-us-container">
             <div class="about-us-texts">
               <h1>WHO WE ARE</h1>
-              <p>
-                We are the design ingredient missing from your digital product
-              </p>
+              <p id="who-we-are-text"></p>
               <br />
               <br />
               <h1>ABOUT US</h1>
-              <p>
-                We are an unusual bunch of creatives who share one vision -
-                making websites that stand out of the many. We enjoy stepping
-                out of our comfort zone and delivering something new and unseen.
-              </p>
+              <p id="about-us-text"></p>
               <br />
               <br />
             </div>
-            <div class="about-us-image">
-              <img src="./images/about-us/office-about-us.png" alt="" />
-            </div>
+            <div id="about-use-image" class="about-us-image"></div>
           </div>
         </div>
       </section>
       <section class="section">
         <div class="container">
           <h1>OUR TEAM</h1>
-          <div class="our-team">
-            <div class="out-team-section">
-              <h3 class="our-team-section-header">UI Team</h3>
-              <div class="our-team-section-blocks">
-                <div class="our-team-section-block">
-                  <img src="./images/members/member (1).jpg" alt="" />
-                </div>
-                <div class="our-team-section-block">
-                  <img src="./images/members/member (2).jpg" alt="" />
-                </div>
-                <div class="our-team-section-block">
-                  <img src="./images/members/member (3).jpg" alt="" />
-                </div>
-                <div class="our-team-section-block">
-                  <img src="./images/members/member (4).jpg" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="out-team-section">
-              <h3 class="our-team-section-header">UX Team</h3>
-              <div class="our-team-section-blocks">
-                <div class="our-team-section-block">
-                  <img src="./images/members/member (5).jpg" alt="" />
-                </div>
-                <div class="our-team-section-block">
-                  <img src="./images/members/member (6).jpg" alt="" />
-                </div>
-                <div class="our-team-section-block">
-                  <img src="./images/members/member (7).jpg" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="out-team-section">
-              <h3 class="our-team-section-header">Frontend Team</h3>
-              <div class="our-team-section-blocks">
-                <div class="our-team-section-block">
-                  <img src="./images/members/member (8).jpg" alt="" />
-                </div>
-                <div class="our-team-section-block">
-                  <img src="./images/members/member (9).jpg" alt="" />
-                </div>
-                <div class="our-team-section-block">
-                  <img src="./images/members/member (10).jpg" alt="" />
-                </div>
-                <div class="our-team-section-block">
-                  <img src="./images/members/member (11).jpg" alt="" />
-                </div>
-                <div class="our-team-section-block">
-                  <img src="./images/members/member (12).jpg" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="out-team-section">
-              <h3 class="our-team-section-header">Backend Team</h3>
-              <div class="our-team-section-blocks">
-                <div class="our-team-section-block">
-                  <img src="./images/members/member (13).jpg" alt="" />
-                </div>
-                <div class="our-team-section-block">
-                  <img src="./images/members/member (14).jpg" alt="" />
-                </div>
-                <div class="our-team-section-block">
-                  <img src="./images/members/member (15).jpg" alt="" />
-                </div>
-                <div class="our-team-section-block">
-                  <img src="./images/members/member (16).jpg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
+          <div id="our-team" class="our-team"></div>
         </div>
       </section>
       <section class="section">
         <div class="container">
           <h1>OUR OFFICE</h1>
-          <div class="our-office-grid">
-            <div class="our-office-grid-tile">
-              <img src="./images/about-us/our-office (1).jpg" />
-            </div>
-            <div class="our-office-grid-tile">
-              <img src="./images/about-us/our-office (6).jpg" />
-            </div>
-            <div class="our-office-grid-tile">
-              <img src="./images/about-us/our-office (2).jpg" />
-            </div>
-            <div class="our-office-grid-tile">
-              <img src="./images/about-us/our-office (5).jpg" />
-            </div>
-            <div class="our-office-grid-tile">
-              <img src="./images/about-us/our-office (3).jpg" />
-            </div>
-            <div class="our-office-grid-tile">
-              <img src="./images/about-us/our-office (7).jpg" />
-            </div>
-            <div class="our-office-grid-tile">
-              <img src="./images/about-us/our-office (4).jpg" />
-            </div>
-          </div>
+          <div id="about-us-mosaic" class="our-office-grid"></div>
         </div>
       </section>
     </main>
@@ -171,19 +179,22 @@
         <div class="footer-blocks">
           <div class="footer-block">
             <div class="footer-block-icon">
-              <img src="./images/footer/location-icon.png" alt="" />
+              <img src="./images/footer/location-icon.png" alt="VAR Location" />
             </div>
             <span class="footer-block-text">Korai 2, Moschato, Athens</span>
           </div>
           <div class="footer-block">
             <div class="footer-block-icon">
-              <img src="./images/footer/email-icon.png" alt="" />
+              <img src="./images/footer/email-icon.png" alt="VAR email" />
             </div>
-            <span class="footer-block-text">companyname@gmail.com</span>
+            <span class="footer-block-text">var-company@gmail.com</span>
           </div>
           <div class="footer-block">
             <div class="footer-block-icon">
-              <img src="./images/footer/phone-icon.png" alt="" />
+              <img
+                src="./images/footer/phone-icon.png"
+                alt="VAR contact phone"
+              />
             </div>
             <span class="footer-block-text">(210) - 64826923</span>
           </div>
@@ -191,18 +202,20 @@
         <div class="footer-social">
           <div class="footer-social-icons">
             <a href="facebook.com" target="_blank" class="footer-social-icon">
-              <img src="./images/footer/fb-icon.png" alt="" />
+              <img src="./images/footer/fb-icon.png" alt="Facebook" />
             </a>
             <a href="instagram.com" target="_blank" class="footer-social-icon">
-              <img src="./images/footer/ig-icon.png" alt="" />
+              <img src="./images/footer/ig-icon.png" alt="Instagram" />
             </a>
             <a href="twitter.com" target="_blank" class="footer-social-icon">
-              <img src="./images/footer/tw-icon.png" alt="" />
+              <img src="./images/footer/tw-icon.png" alt="Twitter" />
             </a>
           </div>
           <span class="footer-social-text">OUR SOCIAL MEDIA</span>
         </div>
       </div>
     </footer>
+    <script src="./js/about-us-page.js"></script>
+    <script src="./js/burger-menu.js"></script>
   </body>
 </html>

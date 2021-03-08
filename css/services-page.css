@@ -1,6 +1,8 @@
 .services-main {
   text-align: center;
   padding-top: 84px;
+  position: relative;
+  z-index: 2;
 }
 
 .services {
@@ -11,44 +13,32 @@
   padding: 32px 0;
 }
 
-.service-container {
+.service {
   display: block;
   height: 320px;
   margin-bottom: 32px;
 }
 
-.service {
-  height: 100%;
-  width: 100%;
-}
-
-.service img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
 @media only screen and (max-width: 1023px) {
-  .service-container {
+  .service {
     flex-basis: 100%;
   }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1215px) {
-  .service-container {
+  .service {
     flex-basis: 45%;
   }
 }
 
 @media only screen and (min-width: 1216px) and (max-width: 1407px) {
-  .service-container {
+  .service {
     flex-basis: 30%;
   }
 }
 
 @media only screen and (min-width: 1408px) {
-  .service-container {
+  .service {
     flex-basis: 23%;
   }
 }

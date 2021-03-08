@@ -2,6 +2,8 @@
   text-align: center;
   padding-top: 84px;
   min-height: 85vh;
+  position: relative;
+  z-index: 2;
 }
 
 .contact-us-blocks {

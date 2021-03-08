@@ -1,5 +1,7 @@
 .about-us-main {
   padding-top: 84px;
+  position: relative;
+  z-index: 2;
 }
 
 .about-us-container {

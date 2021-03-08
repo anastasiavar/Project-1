@@ -1,0 +1,16 @@
+{
+    "projects": [
+        {"name": "Project 1", "image": "./images/projects/project (1).jpg"},
+        {"name": "Project 2", "image": "./images/projects/project (2).jpg"},
+        {"name": "Project 3", "image": "./images/projects/project (3).jpg"},
+        {"name": "Project 4", "image": "./images/projects/project (4).jpg"},
+        {"name": "Project 5", "image": "./images/projects/project (5).jpg"},
+        {"name": "Project 6", "image": "./images/projects/project (6).jpg"},
+        {"name": "Project 7", "image": "./images/projects/project (7).jpg"},
+        {"name": "Project 8", "image": "./images/projects/project (8).jpg"},
+        {"name": "Project 9", "image": "./images/projects/project (9).jpg"},
+        {"name": "Project 10", "image": "./images/projects/project (10).jpg"},
+        {"name": "Project 11", "image": "./images/projects/project (11).jpg"},
+        {"name": "Project 12", "image": "./images/projects/project (12).jpg"}
+    ]
+}

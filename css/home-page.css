@@ -1,5 +1,15 @@
+.main {
+  position: relative;
+  z-index: 2;
+}
+
 .home-page-welcome-section {
   text-align: center;
+}
+
+.slider-section {
+  height: 80vh;
+  width: 100%;
 }
 
 /* Used the following guides */
@@ -76,6 +86,10 @@
 }
 
 @media only screen and (max-width: 1023px) {
+  .slider-section {
+    height: 40vh;
+  }
+
   .home-page-grid {
     display: block;
   }
@@ -87,6 +101,10 @@
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1215px) {
+  .slider-section {
+    height: 60vh;
+  }
+
   .home-page-grid {
     grid-template-rows: repeat(6, 10vh);
   }

@@ -1,6 +1,8 @@
 .projects-main {
   text-align: center;
   padding-top: 84px;
+  position: relative;
+  z-index: 2;
 }
 
 .projects {
@@ -11,44 +13,33 @@
   padding: 32px 0;
 }
 
-.project-container {
+.project {
   display: block;
   height: 320px;
   margin-bottom: 32px;
-}
-
-.project {
-  height: 100%;
-  width: 100%;
-}
-
-.project img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 1023px) {
-  .project-container {
+  .project {
     flex-basis: 100%;
   }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1215px) {
-  .project-container {
+  .project {
     flex-basis: 45%;
   }
 }
 
 @media only screen and (min-width: 1216px) and (max-width: 1407px) {
-  .project-container {
+  .project {
     flex-basis: 30%;
   }
 }
 
 @media only screen and (min-width: 1408px) {
-  .project-container {
+  .project {
     flex-basis: 23%;
   }
 }
